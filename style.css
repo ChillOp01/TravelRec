@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f2f2f2;
+    color: #333;
+
+}
+
+nav {
+  background: #ffffff;
+  padding: 12px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-right {
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-right: 15px;
+}
+
+img {
+  width: 300px;
+  margin: 10px;
+    height: 200px;
+   object-fit: cover;
+   border-radius: 6px;
+
+
+}
+
+
+.card img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 6px;
+  transition: transform 0.6s;
+
+
+}
+
+
+.card {
+  display: inline-block;
+  background: white;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: transform 0.2s;
+
+}
+
+#searchBar {
+  width: 220px;
+  padding: 8px;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  font-size: 16px;
+  margin: 0;
+}
+
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f9f9f9;
+  color: #333;
+  margin: 0;
+  padding: 0 20px;
+    line-height: 1.6;
+
+}
+
+nav a {
+  color: rgb(5, 37, 244);
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 500;
+
+}
+
+nav a.active {
+  text-decoration: underline;
+    color: #007BFF;
+}
+
+section.about,
+section.contact {
+  max-width: 700px;
+  margin: 40px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #057ff9;   
+    font-size: 2.5em;
+    margin-bottom: 20px;
+background: linear-gradient(to right, #121FCF 0%, #CF1512 100%);
+ -webkit-background-clip: text;
+ background-clip: text;
+ -webkit-text-fill-color: transparent;
+
+}
+
+p {
+  line-height: 1.6;
+  margin-top: 15px;
+  font-size: 16px;
+  color: #000000;
+  text-align: center;
+
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+
+}
+
+form input, form textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  width: 100%;
+  box-sizing: border-box;
+
+}
+
+form button {
+  background-color: #007BFF;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+svg {
+	font-family: "Russo One", sans-serif;
+	width: 100%; height: 100%;
+}
+svg text {
+	animation: stroke 10s infinite alternate;
+	stroke-width: 2;
+	stroke: #365FA0;
+	font-size: 40px;
+}
+@keyframes stroke {
+	0%   {
+		fill: rgba(72,138,204,0); stroke: rgba(54,95,160,1);
+		stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
+	}
+	70%  {fill: rgba(72,138,204,0); stroke: rgba(54,95,160,1); }
+	80%  {fill: rgba(72,138,204,0); stroke: rgba(54,95,160,1); stroke-width: 3; }
+	100% {
+		fill: rgba(72,138,204,1); stroke: rgba(54,95,160,0);
+		stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
+	}
+}
+
+.wrapper {background-color: #f9f9f9};
+
+.category-box {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  padding: 24px 18px 18px 18px;
+  margin: 20px 0;
+  min-width: 340px;
+  max-width: 420px;
+  flex: 1 1 340px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.category-box h2 {
+  color: #0a58ca;
+  margin-bottom: 18px;
+  font-size: 1.5em;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 1100px) {
+  #destinations {
+    flex-direction: column;
+    align-items: center;
+  }
+  .category-box {
+    max-width: 95vw;
+    width: 100%;
+  }
+}
+
+@media (max-width: 700px) {
+  nav {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .nav-right {
+    margin-top: 10px;
+    justify-content: flex-end;
+  }
+  #searchBar {
+    width: 100%;
+    min-width: 0;
+  }
+}
+

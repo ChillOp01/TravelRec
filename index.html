@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Travel Explorer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav style="display: flex; align-items: center; justify-content: space-between;">
+    <div>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+    <div class="nav-right">
+      <input type="text" id="searchBar" placeholder="Search..." />
+    </div>
+  </nav>
+
+  <h1> Welcome to Travel Rec!!</h1>
+
+<div class="wrapper">
+	<svg>
+		<text x="50%" y="50%" dy=".35em" text-anchor="middle">
+			Discover your next adventure based on your mood 
+		</text>
+	</svg>
+</div>
+  <p>Click on the image to know more about destinations </p>
+
+  <div id="destinations" style="display: flex; flex-wrap: wrap; justify-content: space-around; gap: 20px;">
+
+    <div class="category-box" id="beaches">
+
+      <h2>Beach Recommendations </h2>
+
+      <div class="card" data-name="Goa Beach ">
+
+        <h3>Goa Beach </h3>
+
+        <img src="https://images.hindustantimes.com/rf/image_size_960x540/HT/p2/2018/08/16/Pictures/_dbca9ffa-a138-11e8-9345-8d51f8ed9678.jpg" data-link="https://www.goa.gov.in/what_to_see/beaches/">
+      </div>
+
+      <div class="card" data-name="Maldives Beach">
+        <h3>Maldives</h3>
+        <img src="https://i.ytimg.com/vi/IowFFfBdh1g/maxresdefault.jpg"  data-link="https://visitmaldives.com/en">
+      </div>
+    </div>
+
+    <div class="category-box" id="temples">
+
+      <h2>Temple Recommendations</h2>
+
+      <div class="card" data-name="Kedarnath Temple">
+
+        <h3>Kedarnath Temple</h3>
+
+        <img src="https://www.hindustantimes.com/ht-img/img/2025/06/17/550x309/Kedarnath-is-not-merely-a-destination--it-is-a-liv_1750169891311.jpg"  data-link="https://badrinath-kedarnath.gov.in/AboutUs/shri-kedarnath.aspx">
+      </div>
+
+      <div class="card" data-name="Meenakshi Temple">
+
+        <h3>Meenakshi Temple</h3>
+        <img src="https://www.poojn.in/wp-content/uploads/2025/03/Meenakshi-Amman-Temple-Visit-Planning-Timings-Dress-Code-and-Darshan-Guide.jpeg.jpg" data-link="https://en.wikipedia.org/wiki/Meenakshi_Temple">
+      </div>
+    </div>
+
+    <div class="category-box" id="countries">
+      <h2>Country Recommendations</h2>
+      <div class="card" data-name="japan">
+        <h3>Japan</h3>
+        <img src="https://images.contentstack.io/v3/assets/blt06f605a34f1194ff/bltc1564bc44f66a900/675e1262cbd7d6bc5f15c6b0/japan-725347-Header_Mobile.jpg?fit=crop&disable=upscale&auto=webp&quality=60&crop=smart" data-link="https://www.japan.travel/en/uk/">
+      </div>
+
+      <div class="card" data-name="italy">
+        <h3>Italy</h3>
+        <img src="https://blog.italotreno.com/wp-content/uploads/2022/04/cinque-terre.jpg" alt="Italy" data-link="https://www.italia.it/en">
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
